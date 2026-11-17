@@ -1,5 +1,29 @@
 # What's new
 
+## 0.1.5
+
+**Public beta**
+- The welcome screen now shows two short scenes: dictation that fixes a slip on its own, and a voice command that opens an app.
+- Say "open a new window in <app>" to get a new window; plain "open" still reuses the last one.
+- Calendar, Spotify and the browser extension are greyed out as "Coming soon" while they are still being tested.
+- The update prompt now asks before upgrading.
+
+## 0.1.3
+
+**A better text-polish model**
+- The text-polish helper now uses OASIS's own fine-tuned version of S1-mini, trained on dictated text. On a
+  hand-checked test set it makes about a quarter fewer mistakes than the stock model (word error rate 0.15
+  instead of 0.20) and gets about twice as many sentences exactly right, at a similar speed.
+- PCs that use the polish helper download it once, the first time you start 0.1.3 (about 460 MB).
+- It is still S1-mini by Superwhisper (a Qwen3-0.6B model, Apache-2.0). The licence and credits come with it.
+
+**Strong PCs start on the best model**
+- A PC that suits QUALITY (a graphics card with 4 GB or more of its own) now downloads QUALITY straight away instead
+  of starting on the small set. First start takes longer, but dictation is accurate from the first word.
+
+**Guides**
+- New guide: how to remove an old version and keep your profiles.
+
 ## 0.1.2
 
 **Faster, and much lighter on memory**
